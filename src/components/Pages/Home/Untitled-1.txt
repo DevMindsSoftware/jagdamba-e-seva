@@ -1,0 +1,27 @@
+import React from "react";
+import Shivajimharaj from "../../images/shivajiraje1.png";
+import Mahatmaphule from "../../images/mahatma phule.png";
+import Ambedkar from "../../images/Ambedkar.png";
+import Subhashchandrabose from "../../images/subhash chandra bose.png";
+import "./hederpages.css"
+
+const Appimageheader = () => {
+  return (
+    <>
+    <div className="text-end deskstopviewimages">
+      <img className=" headerimagessize shivajimahrajsize mx-1" src={Shivajimharaj} alt="" />
+      <img className=" headerimagessize mx-2" src={Mahatmaphule} alt="" />
+      <img className=" headerimagessize ambedkarsize mx-2" src={Ambedkar} alt="" />
+      <img className=" headerimagessize mx-2" src={Subhashchandrabose} alt="" />
+    </div>
+    <div className="mobilvieimagesdrawer">
+      <img className=" headerimagessize shivajimahrajsize" src={Shivajimharaj} alt="" />
+      <img className=" headerimagessize " src={Mahatmaphule} alt="" />
+      <img className=" headerimagessize ambedkarsize " src={Ambedkar} alt="" />
+      <img className=" headerimagessize " src={Subhashchandrabose} alt="" />
+    </div>
+    </>
+  );
+};
+
+export default Appimageheader;

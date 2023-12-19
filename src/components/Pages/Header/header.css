@@ -1,0 +1,224 @@
+.maindivheader{
+    height: var(--headermainheight);
+    background-color: var(--mainheaderbackgroundcolor);
+}
+.mainlogo{
+    margin-top: var(--mainheaderlogo);
+}
+.drawerbuttonmobile{
+     margin-top: var(--drawerbuttonmobile)!important;
+     font-size: var(--drawerbuttonmobileFontsize)!important; 
+}
+.desktopview{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+.mobilehedermainallmenu{
+    display: inline-grid;
+}
+.mobilehedermenu{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-header-devmainds::before {
+    position: absolute;
+    top: 0;
+    left: -999999px;
+    bottom: 0;
+    right: 60px;
+    background: var(--thm-base);
+    content: "";
+}
+
+.iconsize{
+    font-size: 30px;
+}
+.iconsize :hover{
+   
+}
+.earphonesizeset :hover{
+    /* cursor: pointer;
+    transform: rotate(360deg);
+    transition: transform cubic-bezier(0,0,.2,1) .8s; */
+}
+.earphonesizeset{
+    position: relative;
+    left: -54px;
+    bottom: -49px;
+    margin-top: -20px;
+    color: var(--allthimcolor)
+}
+.numberstyle{
+    color: #121110;
+    text-decoration: none;
+}
+  .animated-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #dbdcdd;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+  }
+  .animated-button {
+    display: inline-block;
+    color: #6E6E6E;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+}
+  
+  .animated-button:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .animated-button.hovered {
+    background-color: #dbdcdd; /* Change background color when hovered */
+    color: #fff; /* Change text color when hovered */
+  }
+
+  .devmaindslogo_content::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    right: -7px;
+    background: rgba(var(--thm-header-rgb), .15);
+    clip-path: polygon(101% 0, 86% 56%, 90% 100%, 0 100%, 0 1%);
+    content: "";
+    z-index: -2;
+}
+
+ /* < 320 px */
+@media only screen and (max-width: 320px){
+    .mobileVisible{
+        display: block;
+    }
+    .desktopview{
+        display: none;
+    }
+    .mobilvieimagesdrawer{
+        display: block;
+    }
+    .deskstopviewimages{
+        display: none;
+    }
+   
+ }
+
+/* < 428 px */
+@media only screen and (max-width: 428px){
+    .mobileVisible{
+        display: block;
+    }
+    .desktopview{
+        display: none;
+    }
+    .mobilvieimagesdrawer{
+        display: block;
+    }
+    .deskstopviewimages{
+        display: none;
+    }
+}
+
+/* < 576 px */
+@media only screen and (max-width: 760px){
+    .mobileVisible{
+        display: block;
+    }
+    .desktopview{
+        display: none;
+    }
+    .ant-drawer-content-wrapper{
+        width: 300px !important;
+    }
+    .mobilvieimagesdrawer{
+        display: block;
+    }
+    .deskstopviewimages{
+        display: none;
+    }
+    .desktopheadercontact{
+        display: none;
+    }
+}
+/* > 576 px */
+@media only screen and (min-width: 660px){
+    .mobileVisible{
+        display: block;
+    }
+    .desktopview{
+        display: none; 
+    }
+    .mobilvieimagesdrawer{
+        display: none;
+    }
+   
+}
+
+/* > 768 px */
+@media only screen and (min-width: 768px){
+    .mobileVisible{
+        display: none;
+    }
+    .desktopview{
+        display: block;
+    }
+    .mobilvieimagesdrawer{
+        display: none;
+    }
+ 
+}
+/* > 992 px */
+@media only screen and (min-width: 992px){
+    .mobileVisible{
+        display: none;
+    }
+    .desktopview{
+        display: block;
+    }
+    .mobilvieimagesdrawer{
+        display: none;
+    }
+}
+/* > 1200 px */
+@media only screen and (min-width: 1200px){
+    .mobileVisible{
+        display: none;
+    }
+    .desktopview{
+        display: block;
+    }
+    .mobilvieimagesdrawer{
+        display: none;
+    }
+    
+}
+/* > 1400 px */
+@media only screen and (min-width: 1400px){
+    
+    .mobileVisible{
+        display: none;
+    }
+    .desktopview{
+        display: block;
+    }
+    .mobilvieimagesdrawer{
+        display: none;
+    }
+}
+
+@media (min-width: 600px){
+.css-cuefkz-MuiContainer-root {
+    max-width: 1058px !important;
+}
+}

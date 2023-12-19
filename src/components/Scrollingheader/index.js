@@ -1,0 +1,35 @@
+import React, { useState, useEffect } from "react";
+import Header from "../Pages/Header/index";
+import "./scrolling.css";
+import Reveal from "react-reveal/Reveal";
+
+const ScrollingHeader = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const listenScrollEvent = () => {
+    console.log("Scroll position:", window.scrollY);
+    if (window.scrollY > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    listenScrollEvent();
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
+
+  return (
+    <div className={`app ${isScrolled ? "visible" : "hidden"}`}>
+      <Reveal effect="fadeInDown" duration={3000}>
+        <Header />
+      </Reveal>
+    </div>
+  );
+};
+
+export default ScrollingHeader;

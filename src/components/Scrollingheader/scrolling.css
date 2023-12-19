@@ -1,0 +1,24 @@
+.visible {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* scroll-behavior: smooth; */
+    background-color: white;
+    transform: translateY(0); /* Move the element down to make it visible */
+    transition: opacity 0.5s ease-in-out;
+  }
+
+.hidden {
+    transform: translateY(-100%);
+    /* display: none; */
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  .app {
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  }
+  
+  

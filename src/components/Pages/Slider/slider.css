@@ -1,0 +1,142 @@
+/* .carousellmaindiv{
+    height: 100vh;
+} */
+
+.carousellmaindiv {
+    margin-top: -95px;
+}
+
+.carousellmaindiv .slick-track{
+    height: 100vh !important;
+    background-color: rgb(42, 38, 38);
+}
+.slidermaincardsize{
+    height: 100vh;
+}
+.slidertext{
+    color: #180202;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.1em;
+    position: relative;
+    bottom: 470px;
+}
+.spantext{
+    color: var(--allthimcolor);
+}
+.contaitextmargin{
+    margin-top: 150px;
+}
+.imageslider{
+    width: 100%;
+    margin-top: -154px;
+    height: 100vh; 
+    background-blend-mode: lighten;
+    opacity: 0.7;
+}
+.posiontext{
+    position: absolute;
+}
+.textp{
+    position: relative;
+    bottom: 470px;
+}
+.arrowmain{
+    background-color: #00000054;
+    /* background: rgba(255, 255, 255, 0.3); */
+      /* opacity: 0.9; */
+      font-size: 8px;
+      border: black;
+      color: white;
+      border-radius: 50%;
+      height: 56px;
+  }
+  .carausal-arrow-next{
+    position: absolute;
+      right: 75px;
+      top: 55%;
+  }
+  .carausal-arrow-back{
+    position: absolute;
+      top: 55%;
+      left:75px
+  }
+  :where(.css-dev-only-do-not-override-2q8sxy).ant-btn.ant-btn-icon-only {
+    width: 55px !important;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+  
+ /* < 320 px */
+ @media only screen and (max-width: 320px){
+  
+   
+ }
+
+/* < 428 px */
+@media only screen and (max-width: 428px){
+   
+}
+
+/* < 576 px */
+@media only screen and (max-width: 760px){
+    .slidertext {
+       font-size: 40px;
+       position: relative;
+       bottom: 220px;
+    }
+    .carousellmaindiv .slick-track {
+        height: 40vh !important;
+    }
+    .textp{
+        position: relative;
+        bottom: 220px;
+    }
+    .imageslider{
+        width: 100%;
+        margin-top: -154px;
+        height: 40vh; 
+    
+    }
+    .carausal-arrow-next{
+        position: absolute;
+        top: 30%;
+        right: 15px;
+      }
+      .carausal-arrow-back{
+        position: absolute;
+        top: 30%;
+        left:15px
+      }
+   
+}
+/* > 576 px */
+@media only screen and (min-width: 660px){
+  
+   
+}
+
+/* > 768 px */
+@media only screen and (min-width: 768px){
+  
+ 
+}
+/* > 992 px */
+@media only screen and (min-width: 992px){
+  
+}
+/* > 1200 px */
+@media only screen and (min-width: 1200px){
+  
+    
+}
+/* > 1400 px */
+@media only screen and (min-width: 1400px){
+    
+  
+}
+
+@media (min-width: 600px){
+
+}
