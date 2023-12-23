@@ -28,16 +28,16 @@ const Slider = () => {
     // let id = currentSlide;
   };
   return (
-    <div className="carousellmaindiv">
+    <div className="devminds-carousellmaindiv" id="sliderid">
       <Carousel
         afterChange={onChange}
         ref={ref}
-        className="slidermain"
+        className="devminds-slidermain"
         autoplay
       >
         {/* autoplay */}
         {dataslider.map((val, ind) => (
-          <div className="custom-carousel-item">
+          <div className="devminds-custom-carousel-item">
             {/* <div className="" key={item.key}> */}
             <Row>
               <Col
@@ -62,26 +62,23 @@ const Slider = () => {
                   span: 24,
                 }}
               >
-                <div className="contaitextmargin ">
-                  <img src={val.src} alt="" className="imageslider" />
+                <div className="devminds-contaitextmargin ">
+                  <img src={val.src} alt="" className="devminds-imageslider" />
                   <Container>
                     {/* <p>{val.title}</p> */}
-                    <div className="posiontext">
-                      <h2 className="slidertext">
+                    <div className="devminds-posiontext">
+                      <h2 className="devminds-slidertext">
                         {val.title1}
                         <br />
-                        <span className="spantext">{val.title2}</span> <br />
+                        <span className="devminds-spantext">{val.title2}</span> <br />
                         {val.title3}
                       </h2>
-                      <div class="textp">
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit <br /> Turpis ridiculus tellus.
-                        </p>
+                      <div class="devminds-textp">
+                        <p className="devminds-ptagtext">{val.ptitle1}</p>
+                        <br />
+                        <p>{val.ptitle2}</p>
                       </div>
                     </div>
-                    {/* <p>{val.title}</p>
-                                                                                <p>{val.title}</p> */}
                   </Container>
                 </div>
               </Col>
@@ -91,7 +88,7 @@ const Slider = () => {
       </Carousel>
       <div>
         <Button
-          className="carausal-arrow-back arrowmain"
+          className="devminds-carausal-arrow-back devminds-arrowmain"
           // shape="circle"
           onClick={() => {
             ref.current.prev();
@@ -107,7 +104,7 @@ const Slider = () => {
       </Button> */}
 
         <Button
-          className="carausal-arrow-next arrowmain"
+          className="devminds-carausal-arrow-next devminds-arrowmain"
           // shape="circle"
           icon={<ArrowRightOutlined />}
           onClick={() => {

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import "./Common.css";
 import Header from "./components/Pages/Header/index";
 import Home from "./components/Pages/Home/index";
@@ -8,7 +8,33 @@ import Scrollingheader from "./components/Scrollingheader/index";
 import Mainheaderone from "./components/Mainheaderone/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
+import { useState } from "react";
+import { Button } from "antd";
 function App() {
+  const [open, setOpen] = useState(false);
+  const [bgColor, setBgColor] = useState(false);
+  const listenScrollEvent = (e) => {
+    if (window.scrollY > 200) {
+      setBgColor(true);
+    } else {
+      setBgColor(false);
+    }
+  };
+  useEffect(() => {
+    listenScrollEvent();
+    window.addEventListener("scroll", listenScrollEvent);
+  });
+  const handleClickScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      let position = element.getBoundingClientRect();
+      // scrolls to 20px above element
+      // window.scrollTo(position.left, position.top + window.scrollY - 70);
+      window.scrollTo(position.left, position.top + window.scrollY - 120);
+    }
+  };
   return (
     <div className="">
       {/* <Header /> */}
@@ -32,60 +58,27 @@ function App() {
               Contact us
             </a>
           </span>
+          {/* <Link to="#"> */}
+
+          {/* </Link> */}
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <div
+        onClick={() => {
+          handleClickScroll("sliderid");
+          setOpen(false);
+        }}
+        // className="devminds-uperarrowscroll"
+      >
+        {/* <FontAwesomeIcon icon={faArrowUp} /> */}
+        <Button
+          className="devminds-uperarrowscroll"
+          type=""
+          shape="circle"
+          icon={<FontAwesomeIcon icon={faArrowUp} />}
+        />
+      </div>
+
       <Footer />
     </div>
   );

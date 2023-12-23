@@ -24,7 +24,7 @@ const ScrollingHeader = () => {
   }, []);
 
   return (
-    <div className={`app ${isScrolled ? "visible" : "hidden"}`}>
+    <div className={`app ${isScrolled ? "devminds-visible" : "devminds-hidden"}`}>
       <Reveal effect="fadeInDown" duration={3000}>
         <Header />
       </Reveal>

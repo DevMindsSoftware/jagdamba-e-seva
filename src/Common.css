@@ -7,6 +7,7 @@
     --thm-font: 'DM Sans', sans-serif;
     --thm-font-2: 'Poppins', sans-serif;
     --thm-black:black;
+    --text-white:white;
     --headingFontSize: 20px ;
     --heightlogo:65px;
     --headerlogowidth: 70px;
@@ -44,7 +45,7 @@ body {
     position: fixed;
     text-align: center;
     border-radius: 45%;
-    bottom: 10%;
+    bottom: 4%;
     padding-top: 8px;
     padding-left: 10px;
     right: 5%;
@@ -53,7 +54,7 @@ body {
   }
   .whatsappicon{
     height: 27px !important;
-    color: white !important;
+    color: var( --text-white) !important;
   }
   .on-hover-text {
     background-color: #ffffff;
@@ -79,4 +80,26 @@ body {
   .on-hover-text a{
     color: black;
     text-decoration: none;
+  }
+
+  .devminds-uperarrowscroll{
+    background-color: var(--allthimcolor);
+    /* margin-top: 10px; */
+    width: 42px !important;
+    /* border-radius: 50%; */
+    position: fixed;
+    /* padding: 12px; */
+    align-items: center;
+    bottom: 26px;
+    left: 21px;
+    /* padding-top: 6px; */
+    text-align: center;
+    z-index: 999;
+    /* top: 319px; */
+    height: 42px ;
+    font-size: 18px;
+    color: var(--text-white);
+  }
+  .devminds-uperarrowscroll :hover{
+    background-color: var(--allthimcolor);
   }

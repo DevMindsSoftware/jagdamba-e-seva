@@ -1,19 +1,16 @@
-.maindivheader{
+.devminds-maindivheader{
     height: var(--headermainheight);
     background-color: var(--mainheaderbackgroundcolor);
 }
-.mainlogo{
-    margin-top: var(--mainheaderlogo);
-}
-.drawerbuttonmobile{
+.devminds-drawerbuttonmobile{
      margin-top: var(--drawerbuttonmobile)!important;
      font-size: var(--drawerbuttonmobileFontsize)!important; 
 }
-.desktopview{
+.devminds-desktopview{
     display: flex !important;
     justify-content: flex-end !important;
 }
-.mobilehedermainallmenu{
+.devminds-mobilehedermainallmenu{
     display: inline-grid;
 }
 .mobilehedermenu{
@@ -32,29 +29,22 @@
     content: "";
 }
 
-.iconsize{
+.devminds-iconsize{
     font-size: 30px;
 }
-.iconsize :hover{
-   
-}
-.earphonesizeset :hover{
-    /* cursor: pointer;
-    transform: rotate(360deg);
-    transition: transform cubic-bezier(0,0,.2,1) .8s; */
-}
-.earphonesizeset{
+
+.devminds-earphonesizeset{
     position: relative;
     left: -54px;
     bottom: -49px;
     margin-top: -20px;
     color: var(--allthimcolor)
 }
-.numberstyle{
+.devminds-numberstyle{
     color: #121110;
     text-decoration: none;
 }
-  .animated-button::before {
+  .devminds-animated-button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -67,7 +57,7 @@
     transform-origin: right;
     transition: transform 0.3s ease-in-out;
   }
-  .animated-button {
+  .devminds-animated-button {
     display: inline-block;
     color: #6E6E6E;
     font-size: 16px;
@@ -75,14 +65,14 @@
     font-weight: 500;
 }
   
-  .animated-button:hover::before {
+  .devminds-animated-button:hover::before {
     transform: scaleX(1);
     transform-origin: left;
   }
   
-  .animated-button.hovered {
-    background-color: #dbdcdd; /* Change background color when hovered */
-    color: #fff; /* Change text color when hovered */
+  .devminds-animated-button.hovered {
+    background-color: #dbdcdd;
+    color: #fff; 
   }
 
   .devmaindslogo_content::after {
@@ -99,13 +89,13 @@
 
  /* < 320 px */
 @media only screen and (max-width: 320px){
-    .mobileVisible{
+    .devminds-mobileVisible{
         display: block;
     }
-    .desktopview{
+    .devminds-desktopview{
         display: none;
     }
-    .mobilvieimagesdrawer{
+    .devminds-mobilvieimagesdrawer{
         display: block;
     }
     .deskstopviewimages{
@@ -116,13 +106,13 @@
 
 /* < 428 px */
 @media only screen and (max-width: 428px){
-    .mobileVisible{
+    .devminds-mobileVisible{
         display: block;
     }
-    .desktopview{
+    .devminds-desktopview{
         display: none;
     }
-    .mobilvieimagesdrawer{
+    .devminds-mobilvieimagesdrawer{
         display: block;
     }
     .deskstopviewimages{
@@ -132,16 +122,17 @@
 
 /* < 576 px */
 @media only screen and (max-width: 760px){
-    .mobileVisible{
+    .devminds-mobileVisible{
         display: block;
     }
-    .desktopview{
+    .devminds-desktopview{
         display: none;
     }
-    .ant-drawer-content-wrapper{
+   .devminds-maindrawer{
         width: 300px !important;
+        margin-left: 96px;
     }
-    .mobilvieimagesdrawer{
+    .devminds-mobilvieimagesdrawer{
         display: block;
     }
     .deskstopviewimages{
@@ -153,13 +144,13 @@
 }
 /* > 576 px */
 @media only screen and (min-width: 660px){
-    .mobileVisible{
+    .devminds-mobileVisible{
         display: block;
     }
-    .desktopview{
+    .devminds-desktopview{
         display: none; 
     }
-    .mobilvieimagesdrawer{
+    .devminds-mobilvieimagesdrawer{
         display: none;
     }
    
@@ -167,38 +158,38 @@
 
 /* > 768 px */
 @media only screen and (min-width: 768px){
-    .mobileVisible{
+    .devminds-mobileVisible{
         display: none;
     }
-    .desktopview{
+    .devminds-desktopview{
         display: block;
     }
-    .mobilvieimagesdrawer{
+    .devminds-mobilvieimagesdrawer{
         display: none;
     }
  
 }
 /* > 992 px */
 @media only screen and (min-width: 992px){
-    .mobileVisible{
+    .devminds-mobileVisible{
         display: none;
     }
-    .desktopview{
+    .devminds-desktopview{
         display: block;
     }
-    .mobilvieimagesdrawer{
+    .devminds-mobilvieimagesdrawer{
         display: none;
     }
 }
 /* > 1200 px */
 @media only screen and (min-width: 1200px){
-    .mobileVisible{
+    .devminds-mobileVisible{
         display: none;
     }
-    .desktopview{
+    .devminds-desktopview{
         display: block;
     }
-    .mobilvieimagesdrawer{
+    .devminds-mobilvieimagesdrawer{
         display: none;
     }
     
@@ -206,19 +197,13 @@
 /* > 1400 px */
 @media only screen and (min-width: 1400px){
     
-    .mobileVisible{
+    .devminds-mobileVisible{
         display: none;
     }
-    .desktopview{
+    .devminds-desktopview{
         display: block;
     }
-    .mobilvieimagesdrawer{
+    .devminds-mobilvieimagesdrawer{
         display: none;
     }
-}
-
-@media (min-width: 600px){
-.css-cuefkz-MuiContainer-root {
-    max-width: 1058px !important;
-}
 }

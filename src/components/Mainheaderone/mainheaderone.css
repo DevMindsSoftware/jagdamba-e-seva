@@ -4,11 +4,8 @@
     top: -95px;
 }
 .main-header {
-    /* position: relative;
-    display: block; */
     width: 100%;
     background: transparent;
-    /* -webkit-transition: all 500ms ease; */
     transition: all 500ms ease;
     z-index: 99;
 }
@@ -97,24 +94,13 @@
     top: 0px;
 }
 .Devmindsmain-leftheader li a {
-    /* position: relative;
-    display: inline-block; */
     color: rgba(255, 255, 255, 0.5);
-    /* font-size: 16px;
-    line-height: 16px;
-    transition: all 200ms linear;
-    transition-delay: 0.1s; */
 }
-ul, li {
+.devminds-ullist, .devminds-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-/* ul, li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-} */
 .DDevmindsmain-rightheader {
     position: relative;
     display: block;
@@ -131,11 +117,6 @@ ul, li {
     display: block;
     line-height: 0;
 }
-/* .DDevmindsmain-rightheader ul li .text {
-    position: relative;
-    display: block;
-    margin-left: 15px;
-} */
 .main-header-one__bottom {
     position: relative;
     display: block;
@@ -153,7 +134,6 @@ ul, li {
     position: relative;
     display: block;
     margin-left: 15px;
-    /* margin-top: 0px; */
     padding-top: 13px;
 }
 .main-menu-one .main-container {
@@ -182,14 +162,6 @@ ul, li {
     padding-right: 27px;
     z-index: 1;
 }
-img {
-    max-width: 100%;
-    height: auto;
-    transition-delay: .1s;
-    transition-timing-function: ease-in-out;
-    transition-duration: .7s;
-    transition-property: all;
-}
 .main-header-one__bottom-right {
     display: flex;
     align-items: center;
@@ -201,11 +173,9 @@ img {
 }
 .main-menu .mobile-nav__toggler {
     position: relative;
-    /* display: inline-block; */
     color: var(--thm-base);
     font-size: 25px;
     cursor: pointer;
-    /* -webkit-transition: 500ms; */
     transition: 500ms;
 }
 .main-header-one__bottom-right-number {
@@ -251,21 +221,6 @@ img {
     color: #BCBDBE;
     transition: all 200ms linear;
     transition-delay: 0.1s;
-}
-.btn-one {
-    position: relative;
-    display: inline-block;
-    border-radius: 25px;
-    padding: 0px 35px 0px;
-    line-height: 50px;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: none;
-    background: var(--thm-base);
-    overflow: hidden;
-    font-family: var(--thm-font);
-    transition: all 0.3s ease-in-out 0.1s;
 }
 
 @media (min-width: 1200px){

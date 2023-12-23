@@ -6,13 +6,13 @@ import cardsdataData from "../../ServerData/cardsdataData";
 
 const Cardsmainsliderover = () => {
   return (
-    <div className="cardsection1">
+    <div className="devminds-cardsection1">
       <div className="div1"></div>
-      <div className="imagediv2">
+      <div className="devminds-imagediv2">
         <img src={backanimationimage} alt="#" />
       </div>
       <div className="devmainds-container">
-        <div className="cardcontent1">
+        <div className="devminds-cardcontent1">
           <Row gutter={[16, 16]}>
             {cardsdataData.map((cardsdata, index) => (
               <Col
@@ -22,17 +22,20 @@ const Cardsmainsliderover = () => {
                 xl={6}
                 lg={12}
                 md={12}
-                className="colmain"
+                className="devminds-colmain"
                 data-wow-delay={`${index * 100}ms`}
                 data-wow-duration="1500ms"
               >
-                <div className="cardbox_one">
-                  <div className="cardbox_icons">
-                    {/* <span className={cardsdata.icon}></span> */}
-                    <img src={cardsdata.icon} alt="" />
+                <div className="devminds-cardbox_one">
+                  <div className="devminds-cardbox_icons">
+                    <img
+                      src={cardsdata.icon}
+                      alt=""
+                      className="devminds-cardsiconsimage"
+                    />
                   </div>
-                  <div className="cardbox_contenttext">
-                    <h3 className="carbox_hover">
+                  <div className="devminds-cardbox_contenttext">
+                    <h3 className=".devminds-carbox_hover">
                       <a href="#">{cardsdata.title}</a>
                     </h3>
                     <p>{cardsdata.description}</p>

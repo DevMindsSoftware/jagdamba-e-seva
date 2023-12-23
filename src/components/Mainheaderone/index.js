@@ -11,7 +11,7 @@ import {
 import { faEnvelope, faClock } from "@fortawesome/free-solid-svg-icons";
 const MainHeaderOne = () => {
   return (
-    <header className="main-header main-header-one">
+    <header className="main-header main-header-one" id="#">
       {/* Main Header One Top */}
       <div className="Devmindsmain-first-header">
         <div className="main-container">
@@ -19,31 +19,31 @@ const MainHeaderOne = () => {
             {/* Main Header One Top Left */}
             <div className="Devmindsmain-leftside-header">
               {/* Top Left Menu */}
-              <ul className="Devmindsmain-leftsidemenu">
-                <li>
+              <ul className="Devmindsmain-leftsidemenu devminds-ullist">
+                <li className="devminds-list">
                   <a href="#">Sachin</a>
-                </li>
-                <li>
+                </li >
+                <li className="devminds-list">
                   <a href="#">Shivaji</a>
-                </li>
-                <li>
+                </li >
+                <li className="devminds-list">
                   <a href="#">Jambhale</a>
                 </li>
               </ul>
 
               {/* Top Left Social Links */}
-              <ul className="Devmindsmain-leftheader">
-                <li>
+              <ul className="Devmindsmain-leftheader devminds-ullist">
+                <li className="devminds-list mx-2">
                   <a href="#">
                     <FontAwesomeIcon icon={faFacebook} />
                   </a>
                 </li>
-                <li>
+                <li className="devminds-list mx-2">
                   <a href="#">
                     <FontAwesomeIcon icon={faTwitter} />
                   </a>
                 </li>
-                <li className="mt-1">
+                <li className="mt-1 devminds-list mx-2">
                   <a href="#">
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>

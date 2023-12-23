@@ -1,35 +1,27 @@
-.cardsection1 {
+.devminds-cardsection1 {
     position: relative;
     display: block;
     padding: 0px 0px 90px;
     margin-top: -85px;
     z-index: 10;
 }
-/* .cardsection1 .div1 {
-    position: absolute;
-    width: 387px;
-    height: 387px;
-    left: -148px;
-    bottom: -190px;
-    border-radius: 50%;
-    border: 1px solid #E5E5E5;
-    z-index: -1;
-} */
-.cardsection1 .imagediv2 {
+
+.devminds-cardsection1 .devminds-imagediv2 {
     position: absolute;
     width: 205px;
     height: 197px;
-    /* left: 150px; */
     bottom: 15px;
     z-index: -1;
 }
-img {
+.devminds-cardsiconsimage {
     max-width: 100%;
     height: auto;
     transition-delay: .1s;
     transition-timing-function: ease-in-out;
     transition-duration: .7s;
     transition-property: all;
+    height: 64px;
+    margin-top: 6px 
 }
 .devmainds-container {
     position: static;
@@ -37,12 +29,12 @@ img {
     padding: 0px 15px;
     margin: 0 auto;
 }
-.cardcontent1 {
+.devminds-cardcontent1 {
     position: relative;
     display: block;
     z-index: 1;
 }
-.cardbox_one {
+.devminds-cardbox_one {
     position: relative;
     display: block;
     background: #FFFFFF;
@@ -54,13 +46,13 @@ img {
     margin-bottom: 11;
     z-index: 1;
 }
-.cardbox_one {
+.devminds-cardbox_one {
     position: relative;
     overflow: hidden;
     color:  black;
 }
 
-.cardbox_one::before {
+.devminds-cardbox_one::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -75,16 +67,16 @@ img {
     opacity: 0;
     transition: all 0.4s ease-out;
 }
-.cardbox_one:hover,
-.cardbox_one:hover .cardbox_contenttext h3 a {
+.devminds-cardbox_one:hover,
+.devminds-cardbox_one:hover .devminds-cardbox_contenttext h3 a {
     color: white; 
 }
-.cardbox_one:hover::before {
+.devminds-cardbox_one:hover::before {
     width: 100%;
     height: 100%;
     opacity: 1;
 }
-.cardbox_icons {
+.devminds-cardbox_icons {
     position: relative;
     display: block;
     width: 80px;
@@ -94,7 +86,7 @@ img {
     text-align: center;
     z-index: 1;
 }
-.cardbox_icons:before {
+.devminds-cardbox_icons:before {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -109,37 +101,36 @@ img {
     content: '';
     z-index: -1;
 }
-.cardbox_icons span::before {
+.devminds-cardbox_icons span::before {
     position: relative;
     display: inline-block;
     color: #fff;
     font-size: 40px;
     line-height: 80px;
 }
-.cardbox_contenttext {
+.devminds-cardbox_contenttext {
     position: relative;
     display: block;
     margin-top: 24px;
 }
-.cardbox_contenttext h3 {
+.devminds-cardbox_contenttext h3 {
     font-weight: 600;
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 16px;
 }
-.cardbox_contenttext h3 a {
+.devminds-cardbox_contenttext h3 a {
     color: var(--thm-black);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
-.cardbox_contenttext p {
+.devminds-cardbox_contenttext p {
     margin: 0;
     transition: all 200ms linear;
     transition-delay: 0.1s;
+    font-weight: 400;
+    font-size: 16px;
 }
-/* .cardsection1 :hover {
-    background-color: #eb292c;
-} */
-.carbox_hover :hover{
+.devminds-carbox_hover :hover{
 color: wheat;
 }

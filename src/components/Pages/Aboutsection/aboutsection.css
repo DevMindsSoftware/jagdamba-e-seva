@@ -1,31 +1,31 @@
-.stylediv1 {
+.devminds-stylediv1 {
     position: relative;
     display: block;
     background: #ffffff;
     padding: 0px 0 0px;
     z-index: 1;
 }
-.about-container {
+.devminds-about-container {
     position: static;
     max-width: 1320px;
     padding: 0px 15px;
     margin: 0 auto;
 }
-.stylediv1_all {
+.devminds-stylediv1_all {
     position: relative;
     display: block;
     max-width: 600px;
     width: 100%;
 }
-.stylediv1_all .sec-title {
+.devminds-stylediv1_all .devminds-titlesec {
     padding-bottom: 31px;
 }
-.sec-title .sub-title {
+.devminds-titlesec .devminds-sub-title {
     position: relative;
     display: block;
     padding-bottom: 14px;
 }
-.sec-title .sub-title h6 {
+.devminds-titlesec .devminds-sub-title h6 {
     color: var(--allthimcolor);
     font-size: 16px;
     line-height: 21px;
@@ -34,84 +34,74 @@
     text-transform: uppercase;
     font-family: var(--thm-font);
 }
-.sec-title h2 {
+.devminds-titlesec h2 {
     color: var(--thm-black);
     font-size: 40px;
     line-height: 50px;
     font-weight: 700;
     font-family: var(--thm-font-2);
 }
-.stylediv1_all .sec-title h2 span {
+.devminds-stylediv1_all .devminds-titlesec h2 span {
     color: var(--allthimcolor);
 }
-.stylediv1_all-text {
+.devminds-stylediv1_all-text {
     position: relative;
     display: block;
+    font-size: 16px;
+    font-weight: 600;
 }
-.stylediv1_all-text p {
+.devminds-stylediv1_all-text p {
     margin: 0;
 }
-.stylediv1_all-signature {
+.devminds-stylediv1_all-signature {
     position: relative;
     display: block;
     margin-top: 16px;
 }
-img {
-    max-width: 100%;
-    height: auto;
-    transition-delay: .1s;
-    transition-timing-function: ease-in-out;
-    transition-duration: .7s;
-    transition-property: all;
-}
-.stylediv1_all-list {
+
+.devminds-stylediv1_all-list {
     position: relative;
     display: block;
     margin-top: 23px;
 }
-ul, li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.stylediv1_all-list li {
+.devminds-stylediv1_all-list li {
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 8px;
 }
-.stylediv1_all-list li .icon-box {
+.devminds-stylediv1_all-list li .devminds-icon-box {
     position: relative;
     display: block;
 }
-.stylediv1_all-list li .icon-box span::before {
+.devminds-stylediv1_all-list li .devminds-icon-box span::before {
     position: relative;
     display: inline-block;
     color: var(--allthimcolor);
     font-size: 18px;
     font-weight: 700;
 }
-.stylediv1_all-list li .text-box {
+.devminds-stylediv1_all-list li .text-box {
     position: relative;
     display: block;
     margin-left: 12px;
 }
-.stylediv1_all-list li .text-box p {
+.devminds-stylediv1_all-list li .text-box p {
     color: var(--thm-black);
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
 }
-.stylediv1_all-btn {
+.devminds-stylediv1_all-btn {
     position: relative;
     display: block;
     margin-top: 40px;
     line-height: 0;
 }
-.stylediv1_all-btn .btn-one {
+.devminds-stylediv1_all-btn .devminds-btncolorsametem {
     box-shadow: 0px 15px 50px rgba(235, 41, 44, 0.3);
 }
-.btn-one:before {
+.devminds-btncolorsametem:before {
     position: absolute;
     content: '';
     top: 0;
@@ -129,11 +119,11 @@ ul, li {
     -webkit-transform: scale(0.5, 1);
     transform: scale(0.5, 1);
 }
-.btn-one .txt {
+.devminds-btncolorsametem .devminds-txt {
     position: relative;
     z-index: 1;
 }
-.stylediv1__img {
+.devminds-stylediv1__img {
     position: relative;
     display: block;
     /* margin-left: 30px; */
@@ -143,27 +133,20 @@ ul, li {
     width: 100%;
     z-index: 1;
 }
-.stylediv1__img .shape1 {
+.devminds-stylediv1__img .shape1 {
     position: absolute;
     top: 235px;
     left: 20px;
     z-index: -1;
 }
-img {
-    max-width: 100%;
-    height: auto;
-    transition-delay: .1s;
-    transition-timing-function: ease-in-out;
-    transition-duration: .7s;
-    transition-property: all;
-}
-.stylediv1__img .shape2 {
+
+.devminds-stylediv1__img .shape2 {
     position: absolute;
     top: 90px;
     right: -50px;
     z-index: -1;
 }
-.stylediv1__img .shape3 {
+.devminds-stylediv1__img .shape3 {
     position: absolute;
     left: 350px;
     right: -999999px;
@@ -173,14 +156,14 @@ img {
     content: "";
     z-index: -1;
 }
-.stylediv1__img {
+.devminds-stylediv1__img {
     position: relative;
     display: block;
 }
-.stylediv1__img img {
-    width: auto;
+.devminds-stylediv1__img img {
+    width: 100%;
 }
-.stylediv1__img .experience-box {
+.devminds-stylediv1__img .experience-box {
     position: absolute;
     top: 140px;
     right: 0;
@@ -194,32 +177,27 @@ img {
     box-shadow: 0px 20px 60px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
-.stylediv1__img .experience-box h2 {
+.devminds-stylediv1__img .experience-box h2 {
     color: var(--allthimcolor);
     font-weight: 600;
     font-size: 50px;
     line-height: 36px;
     font-family: var(--thm-font-2);
 }
-.stylediv1__img .experience-box .odometer.odometer-auto-theme, .stylediv1__img .experience-box .odometer.odometer-theme-default {
+.devminds-stylediv1__img .experience-box .odometer.odometer-auto-theme, .devminds-stylediv1__img .experience-box .odometer.odometer-theme-default {
     font-family: var(--thm-font-2);
     line-height: 0.8em;
 }
-/* .imgshape3 {
-   position: absolute;
-    top: 369px;
-
-} */
-.imgshape2{
+.devminds-imgshape2{
     position: absolute;
     top: 112px;
     left: 401px;
 }
-.imgshape1{
+.devminds-imgshape1{
     position: absolute;
     top: 160px;
 }
-.btncolorsametem{
+.devminds-btncolorsametem{
     background-color: var(--allthimcolor);
     color: white;
 }

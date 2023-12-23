@@ -1,0 +1,106 @@
+/* instantservices.css */
+.devminds-maindive{
+  margin-bottom:70px;
+}
+.devminds-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .devminds-image-container img {
+    width: 100%;
+    /* height: auto; */
+    height: 600px;
+    border-radius: 36px;
+    transition: transform 0.3s ease;
+  }
+  
+  .devminds-image-container:hover img {
+    transform: scale(1.1); 
+  }
+  .devminds-titletextstyle{
+    color: var(--thm-black);
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    font-family: var(--thm-font-2);
+  }
+  .devmainds-maintitlstylee-instant{
+    color: var(--allthimcolor);
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: var(--thm-font);
+  }
+  .devminds-checkicon{
+    color: var(--allthimcolor);
+    font-size: 15px;
+  }
+  .ullist-devminds{
+    list-style-type: none;
+  }
+  .paragraphtext-devminds{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .devminds-text-container {
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    position: absolute;
+    width: 157%;
+    border-radius: 15px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,.1);
+    top: 73%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+}
+.devminds-lisstylline{
+  line-height: 41px;
+  padding-left: 0rem !important;
+}
+.devminds-itemtext{
+    color: var(--thm-black);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: var(--thm-font-2);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+.devminds-carousellmaindiv .ant-carousel .slick-dots li  {
+  display: none !important;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 450px){
+  .devminds-maindive{
+    margin-bottom:649px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+    .devminds-text-container {
+        padding: 20px;
+        border: 1px solid #ddd;
+        position: absolute;
+        width: 94%;
+        border-radius: 8px;
+        background-color: white;
+        top: 167%;
+        left: 50%;
+        height: auto;
+        /* transform: translate(-50%, -50%); */
+      } 
+     
+      .devminds-lisstylline {
+        line-height: 0px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 992px){
+.devminds-maindive {
+    margin-bottom: 402px !important;
+}
+}

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import anime from "animejs";
 import "./footer.css";
+import footerData from "../../ServerData/footerData";
 
 const Footer = () => {
   const wave1 =
@@ -35,34 +36,15 @@ const Footer = () => {
     <div className="bodyofooter">
       <div className="footer">
         <h1>
-          <div className="logo">जगदंब ई-सेवा</div>
+          <div className="logo">{footerData[0].title}</div>
           <ul className="socials ">
-            <li>
-              <a href="https://www.facebook.com/shahupuriyuvak.mandal/">
-                <i
-                  className="fab fa-facebook-f"
-                  style={{ color: "#1877f2" }}
-                ></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.twitter.com">
-                <i className="fab fa-twitter" style={{ color: "#1da1f2" }}></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.whatsapp.com">
-                <i className="fab fa-whatsapp" style={{ color: "#24a01b" }}></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i
-                  className="fab fa-instagram"
-                  style={{ color: "#f10c13" }}
-                ></i>
-              </a>
-            </li>
+            {footerData[0].socialLinks.map((item, index) => (
+              <li key={index}>
+                <a href={item.url} target="_blank">
+                  <i className={item.icon} style={{ color: item.color }}></i>
+                </a>
+              </li>
+            ))}
           </ul>
 
           <div className="copyright">

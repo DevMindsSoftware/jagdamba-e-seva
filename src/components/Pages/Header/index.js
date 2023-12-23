@@ -32,35 +32,35 @@ const Header = () => {
   };
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="maindivheader ">
+    <div className="devminds-maindivheader ">
       <div>
         <Grid container spacing={2}>
-          <Grid item xs={8} sm={4} md={3} lg={3} xl={3}>
+          <Grid item xs={9} sm={5} md={5} lg={3} xl={3}>
             <Container>
               <h3>
                 <Appheaderlogo />
               </h3>
             </Container>
           </Grid>
-          <Grid item xs={4} sm={8} md={9} lg={9} xl={9}>
-            <Container maxWidth="sm">
-              <div className="desktopview">
+          <Grid item xs={3} sm={7} md={7} lg={9} xl={9}>
+            <Container>
+              <div className="devminds-desktopview">
                 <div className="desktopheadercontact">
-                  <div className="earphonesizeset">
-                    <span className="iconsize">
+                  <div className="devminds-earphonesizeset">
+                    <span className="devminds-iconsize">
                       <FontAwesomeIcon icon={faPhone} />
                     </span>
                   </div>
                   <div className="text">
                     <p
-                      className={`animated-button ${
+                      className={`devminds-animated-button ${
                         isHovered ? "hovered" : ""
                       }`}
                       onMouseEnter={() => setIsHovered(true)}
                       onMouseLeave={() => setIsHovered(false)}
                     >
                       Call Anytime <br />
-                      <a href="tel:9423841374" className="numberstyle">
+                      <a href="tel:9423841374" className="devminds-numberstyle">
                         9423841374
                       </a>
                     </p>
@@ -76,16 +76,16 @@ const Header = () => {
                 ))}
               </div>
 
-              <div className="mobileVisible text-end">
+              <div className="devminds-mobileVisible text-end">
                 <div>
                   <MenuOutlined
                     onClick={showDrawer}
-                    className="drawerbuttonmobile"
+                    className="devminds-drawerbuttonmobile"
                   />
                 </div>
 
-                <Drawer placement="right" onClose={onClose} open={open}>
-                  <div className="mobilehedermainallmenu">
+                <Drawer placement="right" onClose={onClose} open={open} className="devminds-maindrawer">
+                  <div className="devminds-mobilehedermainallmenu">
                     <RouterLink
                       to="/"
                       className="mobilehedermenu"

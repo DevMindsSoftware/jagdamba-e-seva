@@ -1,0 +1,36 @@
+.devminds-insertbackgroun{
+    background-image: url("../../../images/insertbackground-image1.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 100px;
+    background-color: #000000a8;
+    background-blend-mode: overlay;
+    text-align: center;
+}
+.devmainds-maintitlstylee2{
+    color: var(--allthimcolor);
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: var(--thm-font);
+}
+.devminds-titletextstyle2{
+    color: var(--text-white);
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    font-family: var(--thm-font-2);
+}
+.devminds-secondcontent{
+    padding-top: 70px;
+}
+.devminds-countingtext{
+    color: var(--allthimcolor);
+}
+.devminds-counttitles{
+    color: var(--text-white);
+    font-size: 20px;
+}

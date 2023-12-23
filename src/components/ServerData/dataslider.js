@@ -8,6 +8,8 @@ const dataslider = [
     title1: "Best of City’s",
     title2: "office & ser 1",
     title3: "Online",
+    ptitle1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit11111",
+    ptitle2:" Turpis ridiculus tellus 111.",
   },
   {
     key: 2,
@@ -15,6 +17,8 @@ const dataslider = [
     title1: "Best of City’s",
     title2: "office & ser 2",
     title3: "Online",
+    ptitle1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit11111",
+    ptitle2:" Turpis ridiculus tellus 111.",
   },
   // {
   //     key: 3,

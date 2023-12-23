@@ -9,7 +9,7 @@
     margin-top: 5px;
 }
 .Devmindslogo{
-    color: white;
+    color: var( --text-white);
 }
 .main-header-devmainds::before {
     position: absolute;
