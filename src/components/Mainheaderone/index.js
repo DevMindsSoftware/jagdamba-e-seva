@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./mainheaderone.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Header from "../../components/Pages/Header";
+import Header from "../../components/Header/index";
 import {
   faFacebook,
   faTwitter,
@@ -21,30 +21,30 @@ const MainHeaderOne = () => {
               {/* Top Left Menu */}
               <ul className="Devmindsmain-leftsidemenu devminds-ullist">
                 <li className="devminds-list">
-                  <a href="#">Sachin</a>
+                  <a href="/" rel="noreferrer" alt="">Sachin</a>
                 </li >
                 <li className="devminds-list">
-                  <a href="#">Shivaji</a>
+                  <a href="/"  rel="noreferrer" alt="">Shivaji</a>
                 </li >
                 <li className="devminds-list">
-                  <a href="#">Jambhale</a>
+                  <a href="/"  rel="noreferrer" alt="">Jambhale</a>
                 </li>
               </ul>
 
               {/* Top Left Social Links */}
               <ul className="Devmindsmain-leftheader devminds-ullist">
                 <li className="devminds-list mx-2">
-                  <a href="#">
+                  <a href="/"  rel="noreferrer" alt="">
                     <FontAwesomeIcon icon={faFacebook} />
                   </a>
                 </li>
                 <li className="devminds-list mx-2">
-                  <a href="#">
+                  <a href="/" rel="noreferrer" alt="">
                     <FontAwesomeIcon icon={faTwitter} />
                   </a>
                 </li>
                 <li className="mt-1 devminds-list mx-2">
-                  <a href="#">
+                  <a href="/" rel="noreferrer" alt="">
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </li>

@@ -1,33 +1,37 @@
-import icon1 from "../../images/shivajiraje1.png"
-import icon2 from "../../images/mahatma phule.png"
-import icon3 from "../../images/Ambedkar.png"
-import icon4 from "../../images/subhash chandra bose.png"
+// import icon1 from "../../images/shivajiraje1.png";
+// import icon2 from "../../images/mahatma phule.png";
+// import icon3 from "../../images/Ambedkar.png";
+// import icon4 from "../../images/subhash chandra bose.png";
+import {
+  faStamp,
+  faFolderOpen,
+  faStore,
+  faNewspaper,
+} from "@fortawesome/free-solid-svg-icons";
+
 const cardsdataData = [
   {
-    icon: icon1,
-    title: "Akki 1",
+    icon: faStamp,
+    title: "ऑनलाईन",
     description:
-      "Tortor neque sed tellus est eget dui id ante tristique tristique dolor.",
+      "ऑनलाईन स्टॅम्प, डाटा एन्ट्री, ऑनलाईन भाडे करारपत्र, हयातीचा दाखला,   ",
   },
   {
-    icon: icon2,
-    title: " akshggA Emergency 2",
+    icon: faFolderOpen,
+    title: "खरेदी आणि मॅरेज",
     description:
-      "Tortor neque sed tellus est eget dui id ante tristique tristique dolor.",
+      "सर्व प्रकारचे खरेदी व विक्री दस्तांची कामे, कोर्ट मॅरेज विवाह नोंद ",
   },
   {
-    icon: icon3,
-    title: " akshggA Emergency 3",
-    description:
-      "Tortor neque sed tellus est eget dui id ante tristique tristique dolor.",
+    icon: faStore,
+    title: "उद्योग",
+    description: "उद्योग आधार, आर.टी.ओ. ऑफिसची सर्व कामे",
   },
   {
-    icon: icon4,
-    title: " akshggA Emergency 4",
-    description:
-      "Tortor neque sed tellus est eget dui id ante tristique tristique dolor .",
+    icon: faNewspaper,
+    title: "सर्व प्रकारचे कागदपत्रे",
+    description: "महानगरपालिका परवाने, सर्व प्रकारचे अॅफिडेव्हिट करून मिळतील",
   },
-  // Add more feature objects as needed
 ];
 
 export default cardsdataData;

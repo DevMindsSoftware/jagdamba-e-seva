@@ -1,31 +1,17 @@
-import { Card, Carousel, Col, Row } from "antd";
+import { Carousel, Col, Row } from "antd";
 import React from "react";
 import dataslider from "../../ServerData/dataslider";
 import { Button } from "antd";
-import {
-  LeftOutlined,
-  RightOutlined,
-  ArrowRightOutlined,
-  ArrowLeftOutlined,
-} from "@ant-design/icons";
+import { ArrowRightOutlined, ArrowLeftOutlined } from "@ant-design/icons";
 import "./slider.css";
-import { Flip } from "react-reveal";
 import { Container } from "@mui/material";
 import { useRef } from "react";
 
 const Slider = () => {
   const ref = useRef();
-  const contentStyle = {
-    // height: "80vh;",
-    color: "#fff",
-    lineHeight: "160px",
-    textAlign: "center",
-    background: "#364d79",
-  };
   const onChange = (currentSlide) => {
     // console.log(currentSlide);
     console.log("id", currentSlide);
-    // let id = currentSlide;
   };
   return (
     <div className="devminds-carousellmaindiv" id="sliderid">
@@ -70,7 +56,10 @@ const Slider = () => {
                       <h2 className="devminds-slidertext">
                         {val.title1}
                         <br />
-                        <span className="devminds-spantext">{val.title2}</span> <br />
+                        <span className="devminds-spantext">
+                          {val.title2}
+                        </span>{" "}
+                        <br />
                         {val.title3}
                       </h2>
                       <div class="devminds-textp">

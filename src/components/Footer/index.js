@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import anime from "animejs";
 import "./footer.css";
-import footerData from "../../ServerData/footerData";
+import footerData from "../ServerData/footerData";
 
 const Footer = () => {
   const wave1 =
@@ -40,7 +40,7 @@ const Footer = () => {
           <ul className="socials ">
             {footerData[0].socialLinks.map((item, index) => (
               <li key={index}>
-                <a href={item.url} target="_blank">
+                <a href={item.url} rel="noreferrer" alt="" target="_blank">
                   <i className={item.icon} style={{ color: item.color }}></i>
                 </a>
               </li>
@@ -57,7 +57,8 @@ const Footer = () => {
             fillRule="evenodd"
             clipRule="evenodd"
             d={wave1}
-            fill="#0099FF"
+            // fill="#eb292c"
+            className="footerwavecolor"
           />
         </svg>
       </div>

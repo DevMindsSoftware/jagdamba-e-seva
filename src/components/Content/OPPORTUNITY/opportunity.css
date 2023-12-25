@@ -14,7 +14,7 @@
     font-weight: 700;
     font-family: var(--thm-font-2);
 }
-.backgrounimagevideo{
+.devminds-backgrounimagevideo{
     background-image: url("../../../images/imagebackgroun-imagevideo.jpg");
     background-position: 50% 50%;
     background-size: cover;
@@ -32,11 +32,14 @@
 .devminds-buttonstyle{
     height: 70px;
     border-radius: 50%;
-    width: 88px;
-    background-color: red;
-    opacity: 0.8;
+    width: 76px;
+    background-color: var(--allthimcolor);
+    opacity: 0.6;
     border: none;
+    padding-left: 22px;
     color: black;
+    font-size: 32px;
+    text-align: center;
 }
 .devminds-iconstylevideo{
     color: var( --text-white);

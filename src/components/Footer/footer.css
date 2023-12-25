@@ -81,3 +81,6 @@
   /* .logo{
     color: rgb(242, 63, 63);
   } */
+  .footerwavecolor{
+    fill: var(--allthimcolor) !important;
+  }

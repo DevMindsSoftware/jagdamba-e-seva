@@ -40,7 +40,7 @@ height: 248px;
     display: block;
     width: 90px;
     font-size: 45px;
-    color: #eb292c;
+    color:var(--allthimcolor);
     padding-top: 10px;
     height: 70px;
     background: rgba(var(--thm-header-rgb), 0.1);

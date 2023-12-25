@@ -2,38 +2,37 @@ const testimonialsData = [
   // Add your dynamic data here
   {
     key: 1,
+    title1: "पुनरावलोकने",
+    title2: " आम्हाला मिळाल्याबद्दल खूप आनंद",
+    title3: " झाला लोक पुनरावलोकन",
     content:
-      " “Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque etiam nis quis at arcu nunc neque ac integer sit lobortis diam semper nulla duis in blandit.”",
+      "तुमचा अनुभव आमच्यासोबत शेअर केल्याबद्दल खूप खूप धन्यवाद. आम्ही तुम्हाला लवकरच पुन्हा भेटू अशी आशा करतो”",
   },
   {
     key: 2,
     content:
-      " “Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque etiam nis quis at arcu nunc neque ac integer sit lobortis diam semper nulla duis in blandit.”",
+      "तुमचे रेटिंग आमच्यासोबत शेअर करण्यासाठी तुम्ही वेळ दिल्याबद्दल आम्ही खरोखरच कौतुक करतो. आम्ही तुम्हाला लवकरच पुन्हा भेटण्यास उत्सुक आहोत”",
   },
   {
     key: 3,
     content:
-      " “Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque etiam nis quis at arcu nunc neque ac integer sit lobortis diam semper nulla duis in blandit.”",
+      "वेळ दिल्याबद्दल धन्यवाद. आम्ही तुमच्या व्यवसायाचे खरोखर कौतुक करतो. कृपया भविष्यात आम्ही तुमच्यासाठी काय करू शकतो ते आम्हाला कळवा”",
   },
   {
     key: 4,
-    content:
-      " “Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque etiam nis quis at arcu nunc neque ac integer sit lobortis diam semper nulla duis in blandit.”",
+    content: "वेळ दिल्याबद्दल धन्यवाद सर माझे काम पूर्ण झाले”",
   },
   {
     key: 5,
-    content:
-      " “Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque etiam nis quis at arcu nunc neque ac integer sit lobortis diam semper nulla duis in blandit.”",
+    content: " आम्ही तुम्हाला लवकरच पुन्हा भेटण्यास उत्सुक आहोत”",
   },
   {
     key: 6,
-    content:
-      " “Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque etiam nis quis at arcu nunc neque ac integer sit lobortis diam semper nulla duis in blandit.”",
+    content: " वेळ दिल्याबद्दल आम्ही खरोखरच कौतुक करतो.”",
   },
   {
     key: 7,
-    content:
-      " “Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque etiam nis quis at arcu nunc neque ac integer sit lobortis diam semper nulla duis in blandit.”",
+    content: "धन्यवाद सर तुम्ही वेळ दिल्याबद्दल ”",
   },
 ];
 export default testimonialsData;

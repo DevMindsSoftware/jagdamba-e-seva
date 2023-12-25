@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Container, Grid } from "@mui/material";
-import { Button, Drawer } from "antd";
-import { Link as RouterLink, useNavigate } from "react-router-dom";
-import Appheaderlogo from "../../Headerpages/headerlogo";
-import Appimageheader from "../../Headerpages/imageheader";
-import DataHeader from "../../ServerData/dataheader";
+import { Drawer } from "antd";
+import { Link as RouterLink } from "react-router-dom";
+import Appheaderlogo from "../Headersubcomponent/headerlogo";
+import Appimageheader from "../Headersubcomponent/imageheader";
+import DataHeader from "../ServerData/dataheader";
 import "./header.css";
 import { MenuOutlined } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +12,6 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
 
   const showDrawer = () => {
     setOpen(true);
@@ -84,37 +83,64 @@ const Header = () => {
                   />
                 </div>
 
-                <Drawer placement="right" onClose={onClose} open={open} className="devminds-maindrawer">
+                <Drawer
+                  placement="right"
+                  onClose={onClose}
+                  open={open}
+                  className="devminds-maindrawer"
+                >
                   <div className="devminds-mobilehedermainallmenu">
-                    <RouterLink
-                      to="/"
+                    <label
                       className="mobilehedermenu"
-                      onClick={onClose}
+                      onClick={() => handleClickScroll("sliderid")}
                     >
                       Home
-                    </RouterLink>
-                    <label
-                      className="mobilehedermenu"
-                      onClick={() => handleClickScroll("#about")}
-                    >
-                      About
-                    </label>
-                    <RouterLink
-                      to="/photogallery"
-                      className="text-dark mobilehedermenu"
-                      onClick={onClose}
-                    >
-                      Photos
-                    </RouterLink>
-                    <label
-                      className="mobilehedermenu"
-                      onClick={() => handleClickScroll("#Events")}
-                    >
-                      Events
                     </label>
                     <label
                       className="mobilehedermenu"
-                      onClick={() => handleClickScroll("#contact")}
+                      onClick={() => handleClickScroll("cardhoveslider")}
+                    >
+                     cards
+                    </label>
+                    <label
+                      className="mobilehedermenu"
+                      onClick={() => handleClickScroll("about")}
+                    >
+                     About
+                    </label>
+                    <label
+                      className="mobilehedermenu"
+                      onClick={() => handleClickScroll("activity")}
+                    >
+                     activity
+                    </label>
+                    <label
+                      className="mobilehedermenu"
+                      onClick={() => handleClickScroll("facilities")}
+                    >
+                      Other facilities
+                    </label>
+                    <label
+                      className="mobilehedermenu"
+                      onClick={() => handleClickScroll("पुनरावलोकने")}
+                    >
+                     reviews
+                    </label>
+                    <label
+                      className="mobilehedermenu"
+                      onClick={() => handleClickScroll("customer")}
+                    >
+                     customer
+                    </label>
+                    <label
+                      className="mobilehedermenu"
+                      onClick={() => handleClickScroll("video")}
+                    >
+                     video
+                    </label>
+                    <label
+                      className="mobilehedermenu"
+                      onClick={() => handleClickScroll("contact")}
                     >
                       Contact
                     </label>

@@ -1,5 +1,5 @@
 import { Col, Row } from "antd";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Instantservice2.css";
 import Flip from "react-reveal/Flip";
 import CountUp from "react-countup";
@@ -7,7 +7,7 @@ import serverinstantservicesData2 from "../../ServerData/Instantservice2Data";
 
 const Instantservice2 = () => {
   return (
-    <div className="devminds-insertbackgroun">
+    <div className="devminds-insertbackgroun" id="customer">
       <div className="container devminds-secondcontent">
         <Row gutter={[16, 16]}>
           {/* Adjust the gutter as needed */}

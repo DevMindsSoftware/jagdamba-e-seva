@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Header from "../Pages/Header/index";
+import Header from "../Header/index";
 import "./scrolling.css";
 import Reveal from "react-reveal/Reveal";
 

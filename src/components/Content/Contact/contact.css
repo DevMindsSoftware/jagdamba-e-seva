@@ -1,0 +1,77 @@
+.contactbg{
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgb(0 0 0 / 0%),rgb(247 247 247 / 19%)), url("../../../images/contact-Bg.jpg");
+      background-size: 100%,100%;
+      margin-bottom: 58px;
+      margin-top: -3px;
+      background-size: cover;
+  }
+  .inputContact{
+    background-color: #f0f8ff42;
+    border: 1px solid #9da6af;
+    color: white;
+  }
+  .inputContact .ant-input-number-input {
+    color: white;
+    padding: 0px;
+  }
+   ::placeholder {
+    color: white !important;
+    opacity: 1; /* Firefox */
+  }
+  .buttonsubmistyle{
+    margin-top: 10px;
+  }
+  .contactmaintitle{
+    padding-top: 30px;
+  }
+  .inputtitle{
+    font-family: emoji;
+    font-size: 18px !important;
+  }
+  .inputContact :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: red;
+  }
+  
+  .inputContact ::-ms-input-placeholder { /* Microsoft Edge */
+   color: red;
+  }
+  .inputContact:focus{
+    background-color: #f0f8ff42;
+    border: 1px solid #9da6af;
+    color: white;
+  
+  }
+  .contacttitle{
+    /* color: rgb(51, 15, 15); */
+    font-family: "Krylon", Sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: oblique;
+    color: white;
+    text-shadow: 1px 2px #120c0c
+  }
+
+  .textincontactp{
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    text-shadow: 3px 4px 11px #120c0c;
+  }
+  .maintitle{
+    font-weight: 800;
+    color: white;
+    text-shadow: 1px 2px #120c0c;
+  }
+  .contacttextbackground{
+    /* background-color: white; */
+    /* padding: 12px;
+    transform: rotateX(45deg);
+    border-radius: 10px; */
+  }
+  .devminds-buttoncolorclass{
+    background-color: var(--allthimcolor);
+  }
+  .devminds-ifamemap{
+    padding-top: 15px;
+  }

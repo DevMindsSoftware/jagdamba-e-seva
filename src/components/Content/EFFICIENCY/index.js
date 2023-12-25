@@ -1,6 +1,6 @@
 import React from "react";
 import "./efficiency.css";
-import { Card, Row, Col } from "antd";
+import { Row, Col } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import efficlencyData from "../../ServerData/efficlencyData";
 
@@ -8,7 +8,7 @@ const EFFICIENCY = () => {
   console.log("efficlencyData", efficlencyData);
   return (
     <>
-      <div className="devminds-maindiveffincy">
+      <div className="devminds-maindiveffincy" id="activity">
         <div className="devminds-maintittle">
           <h6 className="devminds-title1">{efficlencyData[0].maintitle}</h6>
 

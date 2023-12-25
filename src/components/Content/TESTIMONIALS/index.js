@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./testimonials.css";
-import { Col, Row } from "antd";
 import testimonialsData from "../../ServerData/testimonialsData";
 
 const TESTIMONIALS = () => {
@@ -36,13 +35,15 @@ const TESTIMONIALS = () => {
     setRating(value);
   };
   return (
-    <div className="devmindsdiv">
+    <div className="devmindsdiv" id="पुनरावलोकने">
       <div className="container">
         <div className="devminds-content">
-          <h6 className="devmainds-maintitlstylee">TESTIMONIALS</h6>
+          <h6 className="devmainds-maintitlstylee">
+            {testimonialsData[0].title1}
+          </h6>
           <h3 className="devminds-titletextstyle">
-            We are Very Glad to Get <br />
-            People Review
+            {testimonialsData[0].title2} <br />
+            {testimonialsData[0].title3}
           </h3>
         </div>
 

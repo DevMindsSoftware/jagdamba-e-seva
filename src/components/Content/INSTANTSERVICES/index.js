@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const INSTANTSERVICES = () => {
   return (
-    <div className="container devminds-maindive">
+    <div className="container devminds-maindive" id="facilities">
       <Row gutter={[16, 16]}>
         <Col xs={24} sm={24} md={24} lg={12} xl={12}>
           <div className="devminds-image-container">
-            <img src={instantservicesData.src} alt="Image" />
+            <img src={instantservicesData.src} alt="BigCo Inc. logo" />
           </div>
         </Col>
         <Col xs={24} sm={24} md={24} lg={12} xl={12}>

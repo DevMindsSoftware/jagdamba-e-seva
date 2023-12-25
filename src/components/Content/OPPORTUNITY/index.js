@@ -16,12 +16,12 @@ const OPPORTUNITY = () => {
   };
 
   return (
-    <div className="backgrounimagevideo">
+    <div className="devminds-backgrounimagevideo" id="video">
       <div className="container ">
         {/* Ant Design Grid */}
         <Row gutter={[16, 16]}>
           {/* Replace the video URLs with your own */}
-          <Col sm={24} md={24} lg={24} xl={24}>
+          <Col xs={24} sm={24} md={24} lg={24} xl={24}>
             <div>
               <h6 className="devminds-tittlefirst">
                 {opportunityserverData[0].maintexttitlecontent}

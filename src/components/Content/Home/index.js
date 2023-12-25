@@ -7,6 +7,7 @@ import INSTANTSERVICES from "../INSTANTSERVICES";
 import TESTIMONIALS from "../TESTIMONIALS";
 import Instantservice2 from "../Instantservice2";
 import OPPORTUNITY from "../OPPORTUNITY";
+import Contact from "../Contact";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <TESTIMONIALS />
       <Instantservice2 />
       <OPPORTUNITY />
+      <Contact />
     </div>
   );
 };

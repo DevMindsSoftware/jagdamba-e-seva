@@ -13,7 +13,7 @@
     bottom: 15px;
     z-index: -1;
 }
-.devminds-cardsiconsimage {
+/* .devminds-cardsiconsimage {
     max-width: 100%;
     height: auto;
     transition-delay: .1s;
@@ -22,6 +22,18 @@
     transition-property: all;
     height: 64px;
     margin-top: 6px 
+} */
+.devminds-cardsiconsimage {
+    max-width: 100%;
+    height: auto;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .7s;
+    transition-property: all;
+    height: 64px;
+    margin-top: 20px;
+    color: var(--text-white);
+    font-size: 35px;
 }
 .devmainds-container {
     position: static;
@@ -71,6 +83,19 @@
 .devminds-cardbox_one:hover .devminds-cardbox_contenttext h3 a {
     color: white; 
 }
+.devminds-cardbox_one:hover,
+.devminds-cardbox_one:hover .devminds-cardbox_contenttext p {
+    color: white; 
+}
+.devminds-cardbox_one:hover,
+.devminds-cardbox_one:hover .devminds-cardbox_icons {
+    background-color: #efebeb ;
+}
+.devminds-cardbox_one:hover,
+.devminds-cardbox_one:hover .devminds-cardsiconsimage  {
+    color: black ;
+}
+
 .devminds-cardbox_one:hover::before {
     width: 100%;
     height: 100%;
@@ -81,7 +106,8 @@
     display: block;
     width: 80px;
     height: 80px;
-    background: #efebeb;
+    /* background: #efebeb; */
+    background: var(--allthimcolor);
     border-radius: 50%;
     text-align: center;
     z-index: 1;

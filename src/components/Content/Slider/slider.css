@@ -82,8 +82,8 @@
     .devminds-slidertext {
         color: var(--text-white);
         font-weight: 700;
-        font-size: 70px;
-        line-height: 1.1em;
+        font-size: 49px;
+        line-height: 67px;
         position: relative;
         left: 150px;
         bottom: 580px;
@@ -99,9 +99,10 @@
 /* < 760 px */
 @media only screen and (max-width: 760px){
     .devminds-slidertext {
-       font-size: 40px;
-       position: relative;
-       bottom: 464px;
+        font-size: 31px;
+        line-height: 40px;
+        position: relative;
+        bottom: 464px;
     }
     .devminds-carousellmaindiv .slick-track {
         height: 80vh !important;

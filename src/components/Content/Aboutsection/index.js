@@ -1,14 +1,12 @@
 import React from "react";
 import { Row, Col, Button } from "antd";
 import iimagedotted from "../../../images/backroundottedimage.png";
-import manimage from "../../../images/manimage.png";
-import sing from "../../../images/jagdhamb-sing.png";
 import aboutsData from "../../ServerData/aboutsData";
 import "./aboutsection.css";
 
 const AboutSection = () => {
   return (
-    <div className="devminds-stylediv1">
+    <div className="devminds-stylediv1" id="about">
       <div className="devminds-about-container">
         <Row gutter={[16, 16]}>
           <Col sm={24} md={24} lg={12} xl={12}>
@@ -18,7 +16,7 @@ const AboutSection = () => {
                   <h6>{aboutsData[0].aboutmentitle}</h6>
                 </div>
                 <h2>
-                  {aboutsData[0].p1} <span> {aboutsData[0].p2}</span> <br />{" "}
+                  <span> {aboutsData[0].p1}</span> {aboutsData[0].p2} <br />{" "}
                   {aboutsData[0].p3} <br /> {aboutsData[0].p4}
                 </h2>
               </div>
