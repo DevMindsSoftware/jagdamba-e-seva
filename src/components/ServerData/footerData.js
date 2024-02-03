@@ -1,6 +1,8 @@
+import textlogo from "../../images/jagdhambtextlogo.png"
 const footerData = [
   {
-    title: "जगदंब ई-सेवा",
+    title: "ई - सेवा केंद्र",
+    src: textlogo,
     socialLinks: [
       {
         key: 1,

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Row, Col, Modal, Button } from "antd";
 import "./opportunity.css";
 import opportunityserverData from "../../ServerData/opportunityserverData";
+import Functiontext from "../../../Common/Functiontext";
 // Component definition
 const OPPORTUNITY = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,6 +15,15 @@ const OPPORTUNITY = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  // console.log("opportunityserverData", opportunityserverData);
+  if (!opportunityserverData || opportunityserverData.length === 0) {
+    return null;
+  }
+
+  const textArray = opportunityserverData.map(
+    (data) => data.maintexttitlecontent
+  );
+  // console.log("opportunityserverData-textArray", textArray);
 
   return (
     <div className="devminds-backgrounimagevideo" id="video">
@@ -24,7 +34,10 @@ const OPPORTUNITY = () => {
           <Col xs={24} sm={24} md={24} lg={24} xl={24}>
             <div>
               <h6 className="devminds-tittlefirst">
-                {opportunityserverData[0].maintexttitlecontent}
+                {/* {opportunityserverData[0].maintexttitlecontent} */}
+                {textArray && textArray.length > 0 && (
+                  <Functiontext textArray={textArray} />
+                )}
               </h6>
               <h3 className="devminds-videotitle">
                 {opportunityserverData[0].maintitletext1} <br />

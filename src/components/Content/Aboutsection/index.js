@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Row, Col, Button } from "antd";
 import iimagedotted from "../../../images/backroundottedimage.png";
 import aboutsData from "../../ServerData/aboutsData";
 import "./aboutsection.css";
+import Functiontext from "../../../Common/Functiontext";
 
 const AboutSection = () => {
+  console.log("aboutsData", aboutsData);
+  if (!aboutsData || aboutsData.length === 0) {
+    return null;
+  }
+
+  const textArray = aboutsData.map((data) => data.aboutmentitle);
+  // console.log("aboutsData-textArray", textArray);
   return (
     <div className="devminds-stylediv1" id="about">
       <div className="devminds-about-container">
@@ -13,7 +21,14 @@ const AboutSection = () => {
             <div className="devminds-stylediv1_all">
               <div className="devminds-titlesec">
                 <div className="devminds-sub-title">
-                  <h6>{aboutsData[0].aboutmentitle}</h6>
+                  {/* <marquee> */}{" "}
+                  <h6 className="aboutmentitle">
+                    {/* {aboutsData[0].aboutmentitle} */}
+                    {textArray && textArray.length > 0 && (
+                      <Functiontext textArray={textArray} />
+                    )}
+                  </h6>
+                  {/* </marquee> */}
                 </div>
                 <h2>
                   <span> {aboutsData[0].p1}</span> {aboutsData[0].p2} <br />{" "}
@@ -38,11 +53,11 @@ const AboutSection = () => {
                   </li>
                 ))}
               </ul>
-              <div className="devminds-stylediv1_all-btn">
+              {/* <div className="devminds-stylediv1_all-btn">
                 <Button type="" href="#" className="devminds-btncolorsametem">
-                  <span className="devminds-txt">Report an Issues</span>
+                  <span className="devminds-txt">Check</span>
                 </Button>
-              </div>
+              </div> */}
             </div>
           </Col>
 

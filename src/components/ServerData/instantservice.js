@@ -1,4 +1,4 @@
-import Image2 from "../../images/image2.jpg";
+import Image2 from "../../images/jagdambh.jpg";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 const instantservicesData = {
   key: 1,
@@ -6,7 +6,7 @@ const instantservicesData = {
   maintitle1: "इतर सुविधा",
   titletext: "दाखल्यांसाठी लागणाऱ्या कागदपत्रांची यादी",
   packagetext:
-    " ऑनलाईन स्टॅम्प डाटा एन्ट्री ऑनलाईन भाडे करारपत्र हयातीचा दाखला सर्व प्रकारचे खरेदी व विक्री दस्तांची कामे कोर्ट मॅरेज विवाह नोंद । उद्योग आधार आर.टी.ओ. ऑफिसची सर्व कामे । महानगरपालिका परवाने सर्व प्रकारचे अॅफिडेव्हिट करून मिळतील ",
+    " ऑनलाईन स्टॅम्प डाटा एन्ट्री ऑनलाईन भाडे करारपत्र हयातीचा दाखला सर्व प्रकारचे खरेदी व विक्री दस्तांची कामे कोर्ट मॅरेज विवाह नोंद । उद्योग आधार आर.टी.ओ. ऑफिसची सर्व कामे । महानगरपालिका परवाने सर्व प्रकारचे अ‍ॅफिडेव्‍हिट करून मिळतील ",
   // contenttitle: "Your Text Content 1",
   // contenttext: "More details about your content...1",
   Item: [
@@ -31,7 +31,7 @@ const instantservicesData = {
     {
       key: 5,
       iconcheck: faCheck,
-      Item: "शॉप अॅक्ट व फुड लायसन्स ",
+      Item: "शॉप ॲक्ट व फुड लायसन्स ",
       Itemcolum2: "पासपोर्ट नवीन व रिन्युअल ",
     },
     {

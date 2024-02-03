@@ -6,6 +6,8 @@ import Subhashchandrabose from "../../images/subhash chandra bose.png";
 const DataHeader = [
   {
     key: 1,
+    calltitle:" Call Anytime",
+    callnumber:" 9423841374",
     src: Shivajimharaj,
     height: 70, //61
     width: 85, //71

@@ -36,6 +36,9 @@ const Footer = () => {
     <div className="bodyofooter">
       <div className="footer">
         <h1>
+          <div className="logo">
+            <img src={footerData[0].src} alt="Textlogo" />
+          </div>
           <div className="logo">{footerData[0].title}</div>
           <ul className="socials ">
             {footerData[0].socialLinks.map((item, index) => (
@@ -48,7 +51,8 @@ const Footer = () => {
           </ul>
 
           <div className="copyright">
-            <h6>Designed and Developed by DevMinds Software</h6>
+            <h6>Designed and Developed by <a href="https://devminds.co.in/" target='_blank' className="aunchortadtextfooter">DevMinds Software</a></h6>
+            <h6>2024 All Rights resevred to jagdambh E Seva Kendra</h6>
           </div>
         </h1>
 

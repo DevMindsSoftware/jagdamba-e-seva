@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./testimonials.css";
 import testimonialsData from "../../ServerData/testimonialsData";
+import Functiontext from "../../../Common/Functiontext";
 
 const TESTIMONIALS = () => {
   const [rating, setRating] = useState(3);
@@ -34,12 +35,22 @@ const TESTIMONIALS = () => {
   const handleStarClick = (value) => {
     setRating(value);
   };
+  console.log("testimonialsData", testimonialsData);
+  if (!testimonialsData || testimonialsData.length === 0) {
+    return null;
+  }
+
+  const textArray = testimonialsData.map((data) => data.title1);
+  // console.log("testimonialsData-textArray", textArray);
   return (
     <div className="devmindsdiv" id="पुनरावलोकने">
       <div className="container">
         <div className="devminds-content">
           <h6 className="devmainds-maintitlstylee">
-            {testimonialsData[0].title1}
+            {/* {testimonialsData[0].title1} */}
+            {textArray && textArray.length > 0 && (
+              <Functiontext textArray={textArray} />
+            )}
           </h6>
           <h3 className="devminds-titletextstyle">
             {testimonialsData[0].title2} <br />

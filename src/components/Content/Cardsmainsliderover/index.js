@@ -4,6 +4,8 @@ import "./Cardsmainsliderover.css"; // Import your CSS file if needed
 import backanimationimage from "../../../images/backroundottedimage.png";
 import cardsdataData from "../../ServerData/cardsdataData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Slide from 'react-reveal/Slide';
+import "animate.css";
 
 const Cardsmainsliderover = () => {
   return (
@@ -24,25 +26,33 @@ const Cardsmainsliderover = () => {
                 lg={12}
                 md={12}
                 className="devminds-colmain"
-                data-wow-delay={`${index * 100}ms`}
-                data-wow-duration="1500ms"
+                // data-wow-delay={`${index * 100}ms`}
+                // data-wow-duration="1500ms"
               >
-                <div className="devminds-cardbox_one">
-                  <div className="devminds-cardbox_icons">
-                    {/* <img
+                {/* left={index % 2 === 0} right={index % 2 !== 0} delay={index * 100} */}
+                <Slide up>
+                  <div className="devminds-cardbox_one">
+                    <div className="devminds-cardbox_icons">
+                      {/* <img
                       src={cardsdata.icon}
                       alt=""
                       className="devminds-cardsiconsimage"
                     /> */}
-                    <FontAwesomeIcon icon={cardsdata.icon} className="devminds-cardsiconsimage" />
+                      <FontAwesomeIcon
+                        icon={cardsdata.icon}
+                        className="devminds-cardsiconsimage"
+                      />
+                    </div>
+                    <div className="devminds-cardbox_contenttext">
+                      <h3 className=".devminds-carbox_hover">
+                        <a href="/" rel="noreferrer" alt="">
+                          {cardsdata.title}
+                        </a>
+                      </h3>
+                      <p>{cardsdata.description}</p>
+                    </div>
                   </div>
-                  <div className="devminds-cardbox_contenttext">
-                    <h3 className=".devminds-carbox_hover">
-                      <a href="/" rel="noreferrer" alt="">{cardsdata.title}</a>
-                    </h3>
-                    <p>{cardsdata.description}</p>
-                  </div>
-                </div>
+                </Slide>
               </Col>
             ))}
           </Row>

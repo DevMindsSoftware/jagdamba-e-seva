@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./efficiency.css";
 import { Row, Col } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import efficlencyData from "../../ServerData/efficlencyData";
+import Functiontext from "../../../Common/Functiontext";
 
 const EFFICIENCY = () => {
-  console.log("efficlencyData", efficlencyData);
+  console.log("efficlencyData111", efficlencyData);
+  const efficiencyData = efficlencyData;
+  if (!efficiencyData || efficiencyData.length === 0) {
+    return null;
+  }
+
+  const textArray = efficiencyData.map((data) => data.maintitle);
+  // console.log("textArray", textArray);
   return (
     <>
       <div className="devminds-maindiveffincy" id="activity">
         <div className="devminds-maintittle">
-          <h6 className="devminds-title1">{efficlencyData[0].maintitle}</h6>
+          <h6 className="devminds-title1">
+            {/* {efficlencyData[0].maintitle} */}
+            {textArray && textArray.length > 0 && (
+              <Functiontext textArray={textArray} />
+            )}
+          </h6>
 
           <h2 className="devminds-title2">
             {efficlencyData[0].pareghrap1} <br />
@@ -37,6 +50,10 @@ const EFFICIENCY = () => {
                     <span className="devminds-tittlemain">{card.title}</span>
                     <br />
                     {card.content}
+                    <br />
+                    {card.content2}
+                    <br />
+                    {card.content3}
                   </label>
                 </div>
                 <br />

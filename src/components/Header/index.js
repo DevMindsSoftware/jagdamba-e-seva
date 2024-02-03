@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Grid } from "@mui/material";
-import { Drawer } from "antd";
+import { Col, Drawer, Row } from "antd";
 import { Link as RouterLink } from "react-router-dom";
 import Appheaderlogo from "../Headersubcomponent/headerlogo";
 import Appimageheader from "../Headersubcomponent/imageheader";
@@ -9,6 +9,8 @@ import "./header.css";
 import { MenuOutlined } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import Functiontext from "../../Common/Functiontext";
+import { Button, Dropdown, Menu } from "antd";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -30,6 +32,13 @@ const Header = () => {
     onClose();
   };
   const [isHovered, setIsHovered] = useState(false);
+  // console.log("DataHeader", DataHeader);
+  if (!DataHeader || DataHeader.length === 0) {
+    return null;
+  }
+
+  const textArray = DataHeader.map((data) => data.calltitle);
+  // console.log("aboutsData-textArray", textArray);
   return (
     <div className="devminds-maindivheader ">
       <div>
@@ -58,10 +67,22 @@ const Header = () => {
                       onMouseEnter={() => setIsHovered(true)}
                       onMouseLeave={() => setIsHovered(false)}
                     >
-                      Call Anytime <br />
-                      <a href="tel:9423841374" className="devminds-numberstyle">
-                        9423841374
-                      </a>
+                      {/* {DataHeader[0].calltitle} */}
+                      <div className="calllaanytime-text">
+                        {textArray && textArray.length > 0 && (
+                          <Functiontext textArray={textArray} />
+                        )}
+                      </div>
+
+                      {/* <br /> */}
+                      <div className="numbercall">
+                        <a
+                          href="tel:9423841374"
+                          className="devminds-numberstyle"
+                        >
+                          {DataHeader[0].callnumber}
+                        </a>
+                      </div>
                     </p>
                   </div>
                 </div>
@@ -88,6 +109,9 @@ const Header = () => {
                   onClose={onClose}
                   open={open}
                   className="devminds-maindrawer"
+                  //  className={`devminds-maindrawer ${
+                  //   open ? "devminds-drawer-open" : ""
+                  // }`}
                 >
                   <div className="devminds-mobilehedermainallmenu">
                     <label
@@ -96,48 +120,48 @@ const Header = () => {
                     >
                       Home
                     </label>
-                    <label
+                    {/* <label
                       className="mobilehedermenu"
                       onClick={() => handleClickScroll("cardhoveslider")}
                     >
-                     cards
-                    </label>
+                      cards
+                    </label> */}
                     <label
                       className="mobilehedermenu"
                       onClick={() => handleClickScroll("about")}
                     >
-                     About
+                      About
                     </label>
                     <label
                       className="mobilehedermenu"
                       onClick={() => handleClickScroll("activity")}
                     >
-                     activity
+                      activity
                     </label>
-                    <label
+                    {/* <label
                       className="mobilehedermenu"
                       onClick={() => handleClickScroll("facilities")}
                     >
                       Other facilities
-                    </label>
-                    <label
+                    </label> */}
+                    {/* <label
                       className="mobilehedermenu"
                       onClick={() => handleClickScroll("पुनरावलोकने")}
                     >
-                     reviews
-                    </label>
-                    <label
+                      reviews
+                    </label> */}
+                    {/* <label
                       className="mobilehedermenu"
                       onClick={() => handleClickScroll("customer")}
                     >
-                     customer
-                    </label>
-                    <label
+                      customer
+                    </label> */}
+                    {/* <label
                       className="mobilehedermenu"
                       onClick={() => handleClickScroll("video")}
                     >
-                     video
-                    </label>
+                      video
+                    </label> */}
                     <label
                       className="mobilehedermenu"
                       onClick={() => handleClickScroll("contact")}

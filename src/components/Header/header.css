@@ -86,7 +86,21 @@
     content: "";
     z-index: -2;
 }
+.calllaanytime-text{
+    height: 5px;
+    width: 100px;
+}
+.numbercall{
+    margin-top:18px
+}
+/* .devminds-maindrawer {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
 
+.devminds-drawer-open {
+  opacity: 1;
+} */
  /* < 320 px */
 @media only screen and (max-width: 320px){
     .devminds-mobileVisible{

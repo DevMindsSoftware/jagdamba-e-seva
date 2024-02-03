@@ -4,8 +4,18 @@ import "./Instantservice2.css";
 import Flip from "react-reveal/Flip";
 import CountUp from "react-countup";
 import serverinstantservicesData2 from "../../ServerData/Instantservice2Data";
+import Functiontext from "../../../Common/Functiontext";
 
 const Instantservice2 = () => {
+  // console.log("serverinstantservicesData2", serverinstantservicesData2);
+  if (!serverinstantservicesData2 || serverinstantservicesData2.length === 0) {
+    return null;
+  }
+
+  const textArray = serverinstantservicesData2.map(
+    (data) => data.maintexttitle
+  );
+  // console.log("serverinstantservicesData2-textArray", textArray);
   return (
     <div className="devminds-insertbackgroun" id="customer">
       <div className="container devminds-secondcontent">
@@ -13,7 +23,10 @@ const Instantservice2 = () => {
           {/* Adjust the gutter as needed */}
           <Col xs={24} sm={24} md={24} lg={10} xl={10}>
             <h6 className="devmainds-maintitlstylee2">
-              {serverinstantservicesData2[0].maintexttitle}
+              {/* {serverinstantservicesData2[0].maintexttitle} */}
+              {textArray && textArray.length > 0 && (
+                <Functiontext textArray={textArray} />
+              )}
             </h6>
             <br />
             <h2 className="devminds-titletextstyle2">

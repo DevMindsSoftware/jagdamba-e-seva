@@ -13,6 +13,26 @@
     bottom: 15px;
     z-index: -1;
 }
+.devminds-imagediv2 {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  /* @keyframes rotationAndMove {
+    0% {
+      transform: rotate(0deg) translate(0, 0);
+    }
+    100% {
+      transform: rotate(359deg) translate(50px, 50px); 
+    }
+  } */
 /* .devminds-cardsiconsimage {
     max-width: 100%;
     height: auto;

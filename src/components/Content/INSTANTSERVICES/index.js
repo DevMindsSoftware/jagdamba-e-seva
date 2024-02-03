@@ -3,8 +3,16 @@ import { Col, Row } from "antd";
 import "./instantservices.css";
 import instantservicesData from "../../ServerData/instantservice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Functiontext from "../../../Common/Functiontext";
 
 const INSTANTSERVICES = () => {
+  console.log("instantservicesData", instantservicesData);
+  if (!instantservicesData) {
+    return null;
+  }
+
+  const textArray = [instantservicesData.maintitle1]; // Wrap in an array if it's a single value
+  // console.log("instantservicesData-textArray", textArray);
   return (
     <div className="container devminds-maindive" id="facilities">
       <Row gutter={[16, 16]}>
@@ -16,7 +24,10 @@ const INSTANTSERVICES = () => {
         <Col xs={24} sm={24} md={24} lg={12} xl={12}>
           <div className="container mt-2">
             <h6 className="devmainds-maintitlstylee-instant">
-              {instantservicesData.maintitle1}
+              {/* {instantservicesData.maintitle1} */}
+              {textArray && textArray.length > 0 && (
+                <Functiontext textArray={textArray} />
+              )}
             </h6>
             <br />
             <h2 className="devminds-titletextstyle">

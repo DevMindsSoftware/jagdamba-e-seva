@@ -5,8 +5,8 @@ const opportunityserverData = [
     maintitletext1: " जगदंब ",
     maintitletext2: "video",
     videotitle: "video",
-    videoiframe:
-      "https://www.youtube.com/embed/FEjNov0Vf6M?si=qDDtGRb0yzbgzVR4",
+    videoiframe:""
+      // "https://www.youtube.com/embed/FEjNov0Vf6M?si=qDDtGRb0yzbgzVR4",
   },
 ];
 

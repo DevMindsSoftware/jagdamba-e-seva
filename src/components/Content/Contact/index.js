@@ -9,6 +9,8 @@ import {
   faLocationDot,
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
+import contactdata from "../../ServerData/contactdata";
+import Functiontext from "../../../Common/Functiontext";
 
 const { TextArea } = Input;
 
@@ -70,7 +72,13 @@ const Contact = () => {
         );
     }
   };
+  // console.log("contactdata", contactdata);
+  if (!contactdata || contactdata.length === 0) {
+    return null;
+  }
 
+  const textArray = contactdata.map((data) => data.conacttitlecontent);
+  // console.log("contactdata-textArray", textArray);
   return (
     <div className="contactbg" id="contact">
       <div className="container pt-5">
@@ -82,7 +90,9 @@ const Contact = () => {
             fontFamily: "emoji",
           }}
         >
-          जगदंब ई-सेवा- आमच्याशी संपर्क साधा!
+          {textArray && textArray.length > 0 && (
+            <Functiontext textArray={textArray} />
+          )}
         </h4>
       </div>
       <div className="container">

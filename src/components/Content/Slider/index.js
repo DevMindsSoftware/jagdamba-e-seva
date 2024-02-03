@@ -6,12 +6,17 @@ import { ArrowRightOutlined, ArrowLeftOutlined } from "@ant-design/icons";
 import "./slider.css";
 import { Container } from "@mui/material";
 import { useRef } from "react";
+import "animate.css";
+import { useState, useEffect } from "react";
 
 const Slider = () => {
   const ref = useRef();
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   const onChange = (currentSlide) => {
     // console.log(currentSlide);
     console.log("id", currentSlide);
+    setCurrentSlide(currentSlide);
   };
   return (
     <div className="devminds-carousellmaindiv" id="sliderid">
@@ -53,7 +58,14 @@ const Slider = () => {
                   <Container>
                     {/* <p>{val.title}</p> */}
                     <div className="devminds-posiontext">
-                      <h2 className="devminds-slidertext">
+                      <h2
+                        // className="devminds-slidertext animate__animated animate__fadeInDown animate__delay-1s"
+                        className={`devminds-slidertext ${
+                          currentSlide === ind
+                            ? "animate__animated animate__fadeInDown animate__delay-0s"
+                            : "devminds-slidertext-none"
+                        }`}
+                      >
                         {val.title1}
                         <br />
                         <span className="devminds-spantext">
@@ -62,7 +74,14 @@ const Slider = () => {
                         <br />
                         {val.title3}
                       </h2>
-                      <div class="devminds-textp">
+                      <div
+                        // class="devminds-textp animate__animated animate__fadeInRight animate__delay-1s"
+                        className={`devminds-textp ${
+                          currentSlide === ind
+                            ? "animate__animated animate__fadeInRight animate__delay-0s"
+                            : "devminds-slidertext-none"
+                        }`}
+                      >
                         <p className="devminds-ptagtext">{val.ptitle1}</p>
                         <br />
                         <p>{val.ptitle2}</p>
