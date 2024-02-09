@@ -1,4 +1,5 @@
-import manimage from "../../images/manimage.png";
+// import manimage from "../../images/manimage.png";
+import manimage from "../../images/office-jagdhamb.svg";
 import sing from "../../images/jagdhamb-sing.png";
 
 const aboutsData = [
