@@ -1,10 +1,1 @@
-.devminds-topcontain{
-    margin-bottom: 40px;
-    box-shadow: 1px 2px 3px 2px;
-}
-
-@media only screen and (max-width: 768px) {
-    .devminds-mudrankimage {
-        height: 250px !important;
-    }
-}
+.devminds-topcontain{margin-bottom:40px;box-shadow:1px 2px 3px 2px}@media only screen and (max-width:768px){.devminds-mudrankimage{height:250px!important}}

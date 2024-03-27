@@ -7,7 +7,7 @@ const ScrollingHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const listenScrollEvent = () => {
-    console.log("Scroll position:", window.scrollY);
+    // console.log("Scroll position:", window.scrollY);
     if (window.scrollY > 50) {
       setIsScrolled(true);
     } else {

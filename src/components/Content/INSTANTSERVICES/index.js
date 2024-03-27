@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Functiontext from "../../../Common/Functiontext";
 
 const INSTANTSERVICES = () => {
-  console.log("instantservicesData", instantservicesData);
+  // console.log("instantservicesData", instantservicesData);
   if (!instantservicesData) {
     return null;
   }

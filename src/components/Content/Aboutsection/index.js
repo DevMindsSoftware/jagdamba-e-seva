@@ -6,7 +6,7 @@ import "./aboutsection.css";
 import Functiontext from "../../../Common/Functiontext";
 
 const AboutSection = () => {
-  console.log("aboutsData", aboutsData);
+  // console.log("aboutsData", aboutsData);
   if (!aboutsData || aboutsData.length === 0) {
     return null;
   }

@@ -17,7 +17,7 @@ const { TextArea } = Input;
 const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [size, setSize] = useState("large");
-  console.log("setsize", setSize);
+  // console.log("setsize", setSize);
   // const [contactadress, setContactadress] = useState([]);
   const [formValues, setFormValues] = useState({
     from_name: "",
@@ -34,7 +34,7 @@ const Contact = () => {
 
   const MessagesendEmail = () => {
     setLoading(true);
-    console.log("formValues MessagesendEmail =>", formValues);
+    // console.log("formValues MessagesendEmail =>", formValues);
 
     if (
       formValues.message &&
@@ -159,10 +159,10 @@ const Contact = () => {
                       },
                       ({ getFieldValue }) => ({
                         validator(_, value) {
-                          console.log(
-                            "String(value).length",
-                            String(value).length
-                          );
+                          // console.log(
+                          //   "String(value).length",
+                          //   String(value).length
+                          // );
                           if (!value || String(value).length === 10) {
                             return Promise.resolve();
                           }

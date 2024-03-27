@@ -1,6 +1,7 @@
 import { Routes } from "react-router-dom";
 import "./Common.css";
 import Home from "./components/Content/Home/index";
+import RightClickBlocker from "./components/RightClickBlocker";
 import Footer from "./components/Footer/index";
 import Scrollingheader from "./components/Scrollingheader/index";
 import Mainheaderone from "./components/Mainheaderone/index";
@@ -20,8 +21,9 @@ function App() {
     }
   };
   return (
-    <div className="">
+    <div className="selectable-text">
       {/* <Header /> */}
+      <RightClickBlocker />
       <Scrollingheader />
       <Mainheaderone />
       <Home />

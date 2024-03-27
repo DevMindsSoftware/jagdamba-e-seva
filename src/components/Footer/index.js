@@ -51,8 +51,8 @@ const Footer = () => {
           </ul>
 
           <div className="copyright">
-            <h6>Designed and Developed by <a href="https://devminds.co.in/" target='_blank' className="aunchortadtextfooter">DevMinds Software</a></h6>
-            <h6>2024 All Rights Reserved to Jagdambh E Seva Kendra</h6>
+            <h6>Copyright © 2024 Jagdambh E Seva Kendra All Rights  
+            Reserved. Designed & Maintained by <a href="https://devminds.co.in/" target='_blank' className="aunchortadtextfooter">DevMinds Software</a> </h6>
           </div>
         </h1>
 

@@ -7,14 +7,14 @@ import "./Documentservices.css";
 const { Panel } = Collapse;
 
 const Documentservices = () => {
-  console.log("aboutsData", servicesData);
+  // console.log("aboutsData", servicesData);
   if (!servicesData || servicesData.length === 0) {
     return null;
   }
 
   const textArray = servicesData.map((data) => data.servicestitle);
   const textArray1 = servicesData.map((data) => data.maintitle);
-  console.log("servicesData", textArray);
+  // console.log("servicesData", textArray);
   return (
     <>
       <div className="container">

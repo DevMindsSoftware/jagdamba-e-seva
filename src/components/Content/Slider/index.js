@@ -15,7 +15,7 @@ const Slider = () => {
 
   const onChange = (currentSlide) => {
     // console.log(currentSlide);
-    console.log("id", currentSlide);
+    // console.log("id", currentSlide);
     setCurrentSlide(currentSlide);
   };
   return (

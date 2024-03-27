@@ -35,7 +35,7 @@ const TESTIMONIALS = () => {
   const handleStarClick = (value) => {
     setRating(value);
   };
-  console.log("testimonialsData", testimonialsData);
+  // console.log("testimonialsData", testimonialsData);
   if (!testimonialsData || testimonialsData.length === 0) {
     return null;
   }

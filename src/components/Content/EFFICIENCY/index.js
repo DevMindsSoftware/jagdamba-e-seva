@@ -6,7 +6,7 @@ import efficlencyData from "../../ServerData/efficlencyData";
 import Functiontext from "../../../Common/Functiontext";
 
 const EFFICIENCY = () => {
-  console.log("efficlencyData111", efficlencyData);
+  // console.log("efficlencyData111", efficlencyData);
   const efficiencyData = efficlencyData;
   if (!efficiencyData || efficiencyData.length === 0) {
     return null;
